@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic Calculator & Resultchec</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <form name="calculator">
+                <input type="text" placeholder="0" readonly id="result_field" name="result_field">
+                <input type="button" value="1" name="userInput" onclick="input(1)">
+                <input type="button" value="2" name="userInput" onclick="input(2)">
+                <input type="button" value="3" name="userInput" onclick="input(3)">
+                <input type="button" value="+" name="userInput" onclick="input('+')">
+                <input type="button" value="4" name="userInput" onclick="input(4)">
+                <input type="button" value="5" name="userInput" onclick="input(5)">
+                <input type="button" value="6" name="userInput" onclick="input(6)">
+                <input type="button" value="-" name="userInput" onclick="input('-')">
+                <input type="button" value="7" name="userInput" onclick="input(7)">
+                <input type="button" value="8" name="userInput" onclick="input(8)">
+                <input type="button" value="9" name="userInput" onclick="input(9)">
+                <input type="button" value="*" name="userInput" onclick="input('*')">
+                <input type="button" value="0" name="userInput" onclick="input(0)">
+                <input type="button" value="00" name="userInput" onclick="input('00')">
+                <input type="button" value="/" name="userInput" onclick="input('/')">
+                <input type="reset" value="C">
+                <input type="button" value="CE" onclick="clearEntry()">
+                <input type="button" value="=" onclick="calculation()">
+            </form>
+        </div>
+        <div class="resultCalculator">
+            <h1>Result Calculator</h1>
+            <form name="resultCalculator" id="resultCalculator">
+                <input type="number" name="obtainedMarks">
+                <input type="text" readonly name="result">
+                <input type="button" value="Check Result" onclick="checkResult()">
+            </form>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
